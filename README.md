@@ -1,2 +1,2 @@
 # LandingPage
-Demo version of landing page
+Demo version of landing page.

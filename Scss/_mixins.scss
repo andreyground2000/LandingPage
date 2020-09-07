@@ -1,0 +1,246 @@
+@mixin wrapper-container ($containerH) {
+    width: 1140px;
+    height: $containerH;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+@mixin title-wrapper {
+    height: 178px;
+    width: 539px;
+    text-align: center;
+    margin-top: 0px;
+    line-height: 20px;
+}
+@mixin h2-for-all {
+    font-family: 'LibreBaskerville';
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+@mixin span-under-title {
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #6c6c6c;
+    
+}
+@mixin div-content-team ($bd-color) {
+    height: 354px;
+    width: 263px;
+    background-color: #ffffff;
+    border: 5px solid #ffffff;
+    border-bottom: 3px solid $bd-color;
+    text-align: center;
+    box-shadow: $main-box-shadow;
+    
+}
+@mixin p-for-team ($text-color-p-team) {
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-weight: 500;
+    color: $text-color-p-team;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: 'Poppins';
+}
+@mixin span-for-team {
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'Poppins';
+}
+@mixin bennet-block {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    left: 0px;
+    top: 393px;
+    z-index: 1;
+    background-color: $main-white;
+    box-shadow: $main-box-shadow;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 300ms;
+    
+}
+@mixin triangle-bennet ($left-margin) {
+    width: 0px;
+    height: 0px;
+    border: 30px solid transparent;
+    border-bottom: 30px solid $main-white;
+    position: absolute;
+    top: -60px;
+    z-index: 2;
+    left: $left-margin;    
+}
+
+@mixin p-for-benet {
+    font-size: 15px;
+    font-family: 'Poppins';
+    color: $text-grey;
+}
+
+@mixin h3-for-benet {
+    color: #272727;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin-top: 0px; 
+}
+@mixin coffee-div-wrapper ($border-color-coffe-div) {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid $border-color-coffe-div;
+    border-radius: 50%;
+    margin: 0 auto; 
+}
+@mixin small-div-coffe ($bg-color-coffe-div) {
+    width: 10px;
+    height: 10px;
+    background-color:$bg-color-coffe-div;
+    border-radius: 50%;
+}
+@mixin gradient-divs ($gradient-background) {
+    background: $gradient-background;
+    width: 555px;
+    height: 300px;
+}
+@mixin number-divs ($number-bd-color) {
+    height:306px;
+    width: 462px;
+    border-bottom: 3px solid $number-bd-color;
+    box-shadow: $main-box-shadow;
+    padding-left: 100px;
+    padding-top: 67px;
+    position: absolute;
+    background: white;
+}
+@mixin p-steps {
+    font-size: 15px;
+    font-family: 'Poppins';
+    width: 264px;
+    text-align: left;
+    color:#616161 ;
+}
+@mixin h3-steps {
+    margin-top: 0px;
+    font-size: 25px;
+    font-family: 'Poppins';
+    text-align: left;
+    color: black;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+@mixin button-pricing ($text-color-button, $border-color-button) {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    color: $text-color-button;
+    height: 49px;
+    width: 179px;
+    background-color: #ffffff;
+    border: 3px solid $border-color-button;
+    border-radius: 25px;
+    outline: none;
+    margin: 0 auto;
+}
+@mixin hover-button ($bg-btn) {
+    color: #ffffff;
+    background-color: $bg-btn;    
+}
+@mixin testimonials-circule-static {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #ffffff;
+    border-radius: 50%; 
+}
+@mixin select-content-title {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+    width: 80px;
+    text-align: left;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 8px;
+    margin-bottom: 25px;
+}
+@mixin select-content-content {
+    font-size: 15px;
+    font-family: 'Poppins';
+    width: 315px;
+    text-align: left;
+    color:#616161 ;
+    margin-top: 0px;
+}
+@mixin link-blog ($link-color) {
+    color: $link-color;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 15px;
+    &:hover {
+        text-decoration: underline;
+    } 
+}
+@mixin last-paragraph-blog {
+    line-height: 27px;
+    font-size: 15px;
+    font-family: 'Poppins';
+    width: 422px;
+    text-align: left;
+    color:#616161;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+@mixin containers-blog ($border-bottom-blog) {
+    width: 555px;
+    height: 215px;
+    background-color: #ffffff;
+    border-bottom: 3px solid $border-bottom-blog;
+    padding-left: 35px;
+    padding-top: 30px;
+    box-shadow: $main-box-shadow;
+}
+@mixin damian-p-block ($damian-color) {
+    font-size: 15px;
+    font-family: 'Poppins';
+    color: $damian-color;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0px;
+}
+@mixin date-block {
+    font-size: 13px;
+    font-family: 'Poppins';
+    font-weight: normal;
+    color: $text-grey;
+    display: inline-block;
+    margin: 0px;
+    padding-left: 10px;
+}
+@mixin google-block {
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 35px;
+    margin: 0px;
+    width: 425px;
+}
+@mixin footer-div ($footer-div-border) {
+    height: 230px;
+    width: 290px;
+    background:#3f4049;
+    border-bottom:3px solid $footer-div-border;  
+}
+
